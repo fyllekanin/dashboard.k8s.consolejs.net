@@ -1,0 +1,18 @@
+<div id="layer"></div>
+<nz-row id="row" nzJustify="center" type="flex">
+    <nz-col [nzSpan]="6">
+        <nz-layout class="align-center">
+            <form (ngSubmit)="submitForm()" [formGroup]="validateForm" class="login-form" nz-form>
+                <h2>Dashboard Login</h2>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Token">
+                        <nz-input-group nzPrefixIcon="lock">
+                            <input formControlName="password" nz-input placeholder="Token" required type="password"/>
+                        </nz-input-group>
+                    </nz-form-control>
+                </nz-form-item>
+                <button [nzType]="'primary'" class="login-form-button login-form-margin" nz-button>Log in</button>
+            </form>
+        </nz-layout>
+    </nz-col>
+</nz-row>
