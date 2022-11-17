@@ -79,7 +79,7 @@
                         },
                         "development": {
                             "browserTarget": "client:build:development",
-                            "proxyConfig": "src/proxy.conf.json"
+                            "proxyConfig": "proxy.conf.json"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -111,5 +111,8 @@
                 }
             }
         }
+    },
+    "cli": {
+      "analytics": false
     }
 }

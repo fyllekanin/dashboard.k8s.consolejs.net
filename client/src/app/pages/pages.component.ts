@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class PagesComponent {
     isCollapsed = false;
+    nameSpaceTitle = 'Namespace (default)';
 }

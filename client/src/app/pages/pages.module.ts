@@ -7,6 +7,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardOutline, FormOutline, MenuFoldOutline, MenuUnfoldOutline } from '@ant-design/icons-angular/icons';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { CoreModule } from '../core/core.module';
+import {NzSelectModule} from "ng-zorro-antd/select";
 
 const icons = [MenuFoldOutline, MenuUnfoldOutline, DashboardOutline, FormOutline];
 
@@ -16,7 +17,8 @@ const icons = [MenuFoldOutline, MenuUnfoldOutline, DashboardOutline, FormOutline
         RouterModule.forChild(pagesRoutes),
         NzLayoutModule,
         NzMenuModule,
-        NzIconModule.forChild(icons)
+        NzIconModule.forChild(icons),
+        NzSelectModule
     ],
     declarations: [
         PagesComponent

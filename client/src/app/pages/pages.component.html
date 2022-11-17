@@ -6,22 +6,23 @@
               nzCollapsible
               nzWidth="256px">
         <div class="sidebar-logo">
-            <a href="https://ng.ant.design/" target="_blank">
-                <img alt="logo" src="https://ng.ant.design/assets/img/logo.svg">
-                <h1>Ant Design Of Angular</h1>
-            </a>
+            <h1>ConsoleJS Dashboard</h1>
         </div>
         <ul [nzInlineCollapsed]="isCollapsed" nz-menu nzMode="inline" nzTheme="dark">
-            <li nz-submenu nzIcon="dashboard" nzOpen nzTitle="Dashboard">
+            <li nz-submenu nzIcon="dashboard" [nzTitle]="nameSpaceTitle">
+                <ul>
+                    <li nz-menu-item>
+                        <a>Roles</a>
+                    </li>
+                </ul>
+            </li>
+            <li nz-submenu nzIcon="dashboard" nzOpen nzTitle="General">
                 <ul>
                     <li nz-menu-item nzMatchRouter>
-                        <a routerLink="/page/welcome">Welcome</a>
+                        <a routerLink="/page/welcome">Nodes</a>
                     </li>
                     <li nz-menu-item nzMatchRouter>
-                        <a>Monitor</a>
-                    </li>
-                    <li nz-menu-item nzMatchRouter>
-                        <a>Workplace</a>
+                        <a>Roles</a>
                     </li>
                 </ul>
             </li>

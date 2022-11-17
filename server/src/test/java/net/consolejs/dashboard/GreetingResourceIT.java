@@ -1,4 +1,4 @@
-package org.acme;
+package net.consolejs.dashboard;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
